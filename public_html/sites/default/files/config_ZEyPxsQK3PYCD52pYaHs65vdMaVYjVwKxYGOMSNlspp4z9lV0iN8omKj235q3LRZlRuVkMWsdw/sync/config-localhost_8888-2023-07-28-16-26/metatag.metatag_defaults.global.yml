@@ -1,0 +1,29 @@
+uuid: 499a9ea7-c107-4e39-a4f2-c12ddf12c0aa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  apple_touch_icon_144x144: /web/themes/ispace/mstile-150x150.png
+  apple_touch_icon_precomposed_120x120: /web/themes/ispace/apple-touch-icon.png
+  canonical_url: '[current-page:url]'
+  icon_16x16: /web/themes/ispace/favicon-16x16.png
+  icon_32x32: /web/themes/ispace/favicon-32x32.png
+  og_description: '[site:slogan]'
+  og_image: /sites/default/files/2023-07/og.png
+  og_image_alt: 'OG image'
+  og_image_height: '630'
+  og_image_secure_url: /sites/default/files/2023-07/og.png
+  og_image_type: png
+  og_image_url: /sites/default/files/2023-07/og.png
+  og_image_width: '1200'
+  og_site_name: '[site:name]'
+  og_title: '[current-page:title]'
+  og_type: websitecurrent-page
+  og_url: '[current-page:url]'
+  robots: index
+  shortcut_icon: /web/themes/ispace/favicon.ico
+  title: '[current-page:title] | [site:name]'

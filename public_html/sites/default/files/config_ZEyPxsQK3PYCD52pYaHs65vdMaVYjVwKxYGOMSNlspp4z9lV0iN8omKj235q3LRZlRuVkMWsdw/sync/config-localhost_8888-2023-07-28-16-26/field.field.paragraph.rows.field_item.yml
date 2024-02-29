@@ -1,0 +1,75 @@
+uuid: 8f4fe430-769e-439e-a0ce-db1433c73c30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item
+    - paragraphs.paragraphs_type.big_card
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.card_with_icon
+    - paragraphs.paragraphs_type.card_with_overlay
+    - paragraphs.paragraphs_type.icon_and_text
+    - paragraphs.paragraphs_type.rows
+  module:
+    - entity_reference_revisions
+id: paragraph.rows.field_item
+field_name: field_item
+entity_type: paragraph
+bundle: rows
+label: Item
+description: 'Add type of paragraph you want to add to the columns'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      big_card: big_card
+      card: card
+      card_with_icon: card_with_icon
+      icon_and_text: icon_and_text
+      card_with_overlay: card_with_overlay
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: 14
+        enabled: false
+      banner_with_overlay:
+        weight: 15
+        enabled: false
+      big_card:
+        weight: 10
+        enabled: true
+      card:
+        weight: 11
+        enabled: true
+      card_with_icon:
+        weight: 12
+        enabled: true
+      card_with_overlay:
+        weight: 19
+        enabled: true
+      icon_and_text:
+        weight: 13
+        enabled: true
+      left_text_right_image:
+        weight: 14
+        enabled: false
+      q_a:
+        weight: 16
+        enabled: false
+      questions_and_answers:
+        weight: 15
+        enabled: false
+      rows:
+        weight: 17
+        enabled: false
+      text:
+        weight: 25
+        enabled: false
+      two_column_text:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

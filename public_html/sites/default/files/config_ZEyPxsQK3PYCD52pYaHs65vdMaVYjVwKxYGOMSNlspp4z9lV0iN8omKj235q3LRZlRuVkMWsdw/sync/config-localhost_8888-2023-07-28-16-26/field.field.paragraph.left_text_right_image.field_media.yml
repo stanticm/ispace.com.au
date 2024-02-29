@@ -1,0 +1,29 @@
+uuid: 955a46ee-b78f-44df-8813-b8f8591562d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image
+    - paragraphs.paragraphs_type.left_text_right_image
+id: paragraph.left_text_right_image.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: left_text_right_image
+label: Media
+description: 'Add media to your paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: 6e21a0c7-4502-4e6c-936b-af19113c7371
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.ispace_cheeseburgermenu
+  module:
+    - cheeseburger_menu
+  theme:
+    - ispace
+id: ispace_cheeseburgermenutrigger
+theme: ispace
+region: navigation
+weight: 0
+provider: null
+plugin: cheeseburger_menu_trigger
+settings:
+  id: cheeseburger_menu_trigger
+  label: 'Cheeseburger menu trigger'
+  label_display: '0'
+  provider: cheeseburger_menu
+  block_to_trigger: ispace_cheeseburgermenu
+  breakpoints: {  }
+  custom_media_query: 'all and (min-width: 1024px)'
+visibility: {  }

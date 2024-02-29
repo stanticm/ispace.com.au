@@ -1,0 +1,21 @@
+uuid: b2b6b687-1eae-4395-b07e-355a486a385e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_margins
+    - paragraphs.paragraphs_type.text
+  module:
+    - options
+id: paragraph.text.field_margins
+field_name: field_margins
+entity_type: paragraph
+bundle: text
+label: Margins
+description: 'With margins you can set the space between paragraphs, above and bellow paragraph. Choose the size.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

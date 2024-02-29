@@ -1,0 +1,21 @@
+uuid: b18e8e63-d221-4018-b8c9-c7f29097fdc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_narrow
+    - paragraphs.paragraphs_type.text
+id: paragraph.text.field_narrow
+field_name: field_narrow
+entity_type: paragraph
+bundle: text
+label: Narrow
+description: 'Enable this so the paragraph will have smaller width than the default one.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,15 @@
+uuid: 0e0f68cb-e097-44dd-8123-d41ff6796a9b
+langcode: en
+status: true
+dependencies: {  }
+name: card_small
+label: 'Card Small'
+effects:
+  4fb45a98-1edc-4e8f-85f1-bd89e7f61591:
+    uuid: 4fb45a98-1edc-4e8f-85f1-bd89e7f61591
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 280
+      anchor: center-center

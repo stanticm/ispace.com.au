@@ -1,0 +1,48 @@
+ispace.xs:
+  label: Extra_small
+  mediaQuery: "(min-width: 0px)"
+  weight: 1
+  multipliers:
+    - 1x
+ispace.sm:
+  label: Small
+  mediaQuery: "(min-width: 320px)"
+  weight: 1
+  multipliers:
+    - 1x
+ispace.md:
+  label: Medium
+  mediaQuery: "(min-width: 425px)"
+  weight: 1
+  multipliers:
+    - 1x
+ispace.mmd:
+  label: Medium
+  mediaQuery: "(min-width: 576px)"
+  weight: 1
+  multipliers:
+    - 1x
+ispace.lg:
+  label: Large
+  mediaQuery: "(min-width: 768px)"
+  weight: 1
+  multipliers:
+    - 1x
+ispace.xl:
+  label: Extra Large
+  mediaQuery: "(min-width: 1024px)"
+  weight: 1
+  multipliers:
+    - 1x
+ispace.xxl:
+  label: Extra Extra Large
+  mediaQuery: "(min-width: 1290px)"
+  weight: 1
+  multipliers:
+    - 1x
+ispace.widel:
+  label: Wide Large
+  mediaQuery: "(min-width: 1620px)"
+  weight: 1
+  multipliers:
+    - 1x

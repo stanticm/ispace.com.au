@@ -1,0 +1,25 @@
+.region {
+  &-footer_third {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: $unit * 2 0;
+    width: 100%;
+    @include breakpoint($mdBreakpoint) {
+      flex-direction: row;
+      align-items: center;
+      padding: $unit * 2 $unit * 4;
+    }
+  }
+  &-footer_first {
+    display: none;
+    @include breakpoint($mdBreakpoint) {
+      display: block;
+    }
+  }
+  &-navigation {
+    display: flex;
+    align-items: center;
+  }
+}

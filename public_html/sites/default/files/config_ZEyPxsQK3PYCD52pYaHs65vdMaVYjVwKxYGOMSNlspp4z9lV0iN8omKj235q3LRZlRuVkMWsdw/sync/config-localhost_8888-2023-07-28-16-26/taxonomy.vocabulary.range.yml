@@ -1,0 +1,8 @@
+uuid: 3381b732-1b26-49bb-ac2a-8fd5ab5339bf
+langcode: en
+status: true
+dependencies: {  }
+name: Range
+vid: range
+description: ''
+weight: 0

@@ -1,0 +1,12 @@
+uuid: d6b196aa-e6c2-46a3-86cb-eaac7d9fe34f
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: 'Contact Us'
+recipients:
+  - martina.stantic98@gmail.com
+reply: ''
+weight: 0
+message: 'Thank you for contacting us!'
+redirect: /contact

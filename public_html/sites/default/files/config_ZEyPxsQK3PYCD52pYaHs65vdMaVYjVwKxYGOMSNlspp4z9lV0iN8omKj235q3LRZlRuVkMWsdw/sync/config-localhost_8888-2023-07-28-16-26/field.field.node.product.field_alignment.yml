@@ -1,0 +1,21 @@
+uuid: 55b80547-063e-490f-8bc2-6cc5b68b95ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alignment
+    - node.type.product
+  module:
+    - options
+id: node.product.field_alignment
+field_name: field_alignment
+entity_type: node
+bundle: product
+label: Alignment
+description: 'Set up alignment of main title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

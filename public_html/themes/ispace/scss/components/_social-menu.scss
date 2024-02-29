@@ -1,0 +1,43 @@
+#block-ispace-social1,
+#block-ispace-social2 {
+  > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    li {
+      a {
+        padding: $unit $unit $unit $unit * 5;
+        text-decoration: none;
+        display: block;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        background-image: url("../images/icons/facebook.svg");
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: left center;
+        transition: ease 0.2s;
+        &:hover {
+          background-size: 18px;
+        }
+        &[href*="facebook"] {
+          background-image: url("../images/icons/facebook.svg");
+          background-size: 12px;
+          &:hover {
+            background-size: 14px;
+          }
+        }
+        &[href*="twitter"] {
+          background-image: url("../images/icons/twitter.svg");
+        }
+        &[href*="instagram"] {
+          background-image: url("../images/icons/instagram.svg");
+        }
+        &[href*="linkedin"] {
+          background-image: url("../images/icons/linkedin.svg");
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "drupal/aos",
+    "description": "A small library to animate elements as you scroll.",
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/aos",
+    "support": {
+        "issues": "https://www.drupal.org/project/aos",
+        "source": "https://cgit.drupalcode.org/aos"
+    },
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": "^9 || ^10"
+    }
+}

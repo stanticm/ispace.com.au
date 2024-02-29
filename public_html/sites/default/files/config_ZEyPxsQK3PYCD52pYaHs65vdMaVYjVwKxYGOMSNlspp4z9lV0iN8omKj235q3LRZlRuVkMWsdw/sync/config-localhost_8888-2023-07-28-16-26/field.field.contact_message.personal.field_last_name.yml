@@ -1,0 +1,19 @@
+uuid: 451e55e8-6d8a-4e01-8fc9-8158c6c2fe46
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_last_name
+id: contact_message.personal.field_last_name
+field_name: field_last_name
+entity_type: contact_message
+bundle: personal
+label: 'Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

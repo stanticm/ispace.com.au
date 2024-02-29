@@ -1,0 +1,63 @@
+uuid: 00819fca-0091-4605-8995-0c6331f624de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.questions_and_answers.field_disable
+    - field.field.paragraph.questions_and_answers.field_margins
+    - field.field.paragraph.questions_and_answers.field_question
+    - field.field.paragraph.questions_and_answers.field_subtitle
+    - field.field.paragraph.questions_and_answers.field_title
+    - paragraphs.paragraphs_type.questions_and_answers
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.questions_and_answers.default
+targetEntityType: paragraph
+bundle: questions_and_answers
+mode: default
+content:
+  field_disable:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_margins:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_question:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

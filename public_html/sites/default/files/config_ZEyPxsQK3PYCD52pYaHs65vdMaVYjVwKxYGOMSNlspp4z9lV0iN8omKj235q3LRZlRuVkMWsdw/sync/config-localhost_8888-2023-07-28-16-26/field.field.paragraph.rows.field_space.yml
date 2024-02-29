@@ -1,0 +1,21 @@
+uuid: d1e861d5-affa-4118-9b85-722ff3739b50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_space
+    - paragraphs.paragraphs_type.rows
+  module:
+    - options
+id: paragraph.rows.field_space
+field_name: field_space
+entity_type: paragraph
+bundle: rows
+label: Space
+description: 'Choose how big the space between the columns will be.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

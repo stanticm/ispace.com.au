@@ -1,0 +1,21 @@
+uuid: 4abf8b47-85c3-4cea-aa66-2f3acc36e934
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_disable
+    - paragraphs.paragraphs_type.big_card
+id: paragraph.big_card.field_disable
+field_name: field_disable
+entity_type: paragraph
+bundle: big_card
+label: Disable
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

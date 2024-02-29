@@ -1,0 +1,21 @@
+uuid: 5b384878-6592-45fa-b269-735c9eaeb7e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_level
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_level
+field_name: field_level
+entity_type: paragraph
+bundle: card
+label: Level
+description: 'Choose size of the title.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

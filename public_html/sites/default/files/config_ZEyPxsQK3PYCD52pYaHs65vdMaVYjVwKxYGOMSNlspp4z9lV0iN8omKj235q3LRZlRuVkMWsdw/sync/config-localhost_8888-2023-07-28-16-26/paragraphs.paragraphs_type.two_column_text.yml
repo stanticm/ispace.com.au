@@ -1,0 +1,10 @@
+uuid: 27fa0561-d850-406c-8be5-5e023b32cd1f
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_text
+label: 'Two Column Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

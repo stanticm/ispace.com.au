@@ -1,0 +1,30 @@
+uuid: 6ebec5ec-d80d-4829-b830-8acf20e64500
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_margins
+field_name: field_margins
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 24px
+      label: S
+    -
+      value: 32px
+      label: M
+    -
+      value: 64px
+      label: L
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

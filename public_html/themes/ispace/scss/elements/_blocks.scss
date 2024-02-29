@@ -1,0 +1,122 @@
+#block-ispace-page-title {
+  h1 {
+    @include container($container);
+    text-align: center;
+    margin-bottom: $unit * 4;
+  }
+}
+
+#block-ispace-views-block-basic-page-banner-block-1 {
+  .field-media-image {
+    img {
+      margin: 0 auto;
+      @media only screen and (min-width: 2560px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.block-cheeseburgermenu-container {
+  background: rgba(black, 0.8);
+  color: white;
+}
+
+.cheeseburger-menu {
+  &__side-trigger {
+    margin-bottom: 0 !important;
+    min-height: 50px;
+    border-bottom: 0;
+    svg {
+      height: 40px;
+      width: 40px;
+      margin: 0 0 0 auto;
+    }
+  }
+  &__mainmenu {
+    padding: 0 $unit * 6 !important;
+    li {
+      border-bottom: 1px solid white;
+      padding: 0;
+      a {
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.cheeseburger-parent {
+  .cheeseburger-menu__item-label {
+    padding-left: 0 !important;
+    font-weight: bold;
+  }
+}
+
+.search-block-form,
+.search-form {
+  position: relative;
+  .form-item-keys {
+    padding: 0;
+    width: 200px;
+    margin: 0;
+    input {
+      border-width: 1px;
+      height: 40px;
+      margin: 0;
+    }
+  }
+  #edit-actions {
+    @include breakpoint($mdBreakpoint) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  .button {
+    border: none;
+    text-indent: -999px;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: url("../images/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    margin: 0;
+    padding: 10px 0 10px 24px;
+    width: 24px;
+    height: 42px;
+    @include breakpoint($mdBreakpoint) {
+      padding: 10px 24px;
+      width: 48px;
+    }
+  }
+}
+
+.search-block-form {
+  .form-item-keys {
+    display: none;
+    @include breakpoint($mdBreakpoint) {
+      display: inline-block;
+    }
+  }
+}
+.search-form {
+  #edit-basic {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.search-help-link,
+.search-advanced {
+  display: none;
+}
+
+.path-search {
+  #block-ispace-content {
+    @include container($container);
+  }
+}

@@ -1,0 +1,20 @@
+uuid: 4c295c2c-e5d0-45dd-8a35-6bbc689d831d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ispace
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: ispace_local_actions
+theme: ispace
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

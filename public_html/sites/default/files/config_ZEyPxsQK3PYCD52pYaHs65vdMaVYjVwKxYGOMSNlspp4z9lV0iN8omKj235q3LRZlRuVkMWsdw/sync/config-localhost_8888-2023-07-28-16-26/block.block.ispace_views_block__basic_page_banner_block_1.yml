@@ -1,0 +1,35 @@
+uuid: 6aa24f10-7104-4274-8fbd-7a6da7554373
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.basic_page_banner
+  module:
+    - node
+    - views
+  theme:
+    - ispace
+id: ispace_views_block__basic_page_banner_block_1
+theme: ispace
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:basic_page_banner-block_1'
+settings:
+  id: 'views_block:basic_page_banner-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      service: service
+      page: page
+      product: product

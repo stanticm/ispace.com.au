@@ -1,0 +1,18 @@
+uuid: cb774263-dc92-41d3-9bc5-b03b436ba050
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_vertical
+field_name: field_vertical
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

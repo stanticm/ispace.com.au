@@ -1,0 +1,24 @@
+uuid: f741a7d3-9582-489b-9e37-08a6a0c0c1c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.q_a
+  module:
+    - text
+id: paragraph.q_a.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: q_a
+label: Text
+description: 'Add text to your paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 3fd7a853-6bff-4b8c-a51d-7ba7e4e52f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_divider
+    - paragraphs.paragraphs_type.rows
+id: paragraph.rows.field_divider
+field_name: field_divider
+entity_type: paragraph
+bundle: rows
+label: Divider
+description: 'Add divider line at the bottom of paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

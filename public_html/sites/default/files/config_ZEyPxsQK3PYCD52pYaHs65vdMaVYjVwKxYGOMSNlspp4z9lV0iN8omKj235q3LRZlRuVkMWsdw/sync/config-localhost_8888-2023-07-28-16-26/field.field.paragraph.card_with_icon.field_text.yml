@@ -1,0 +1,24 @@
+uuid: 52b56e04-1241-44a5-a45a-4e62e968ecb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.card_with_icon
+  module:
+    - text
+id: paragraph.card_with_icon.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: card_with_icon
+label: Text
+description: 'Add text to you paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

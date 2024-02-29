@@ -1,0 +1,22 @@
+uuid: 8c02e374-1238-4672-86d5-b759e8761eb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ispace
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
+id: ispace_help
+theme: ispace
+region: featured
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

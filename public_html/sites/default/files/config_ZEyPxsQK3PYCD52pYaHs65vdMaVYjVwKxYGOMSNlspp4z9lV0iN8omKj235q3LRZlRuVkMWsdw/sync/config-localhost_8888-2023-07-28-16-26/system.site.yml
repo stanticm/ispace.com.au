@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: ff611005-e565-4c9a-8921-b0edfd4efbf76
+name: iSpace
+mail: martina.stantic98@gmail.com
+slogan: ""
+page:
+  403: /node/2
+  404: /node/3
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

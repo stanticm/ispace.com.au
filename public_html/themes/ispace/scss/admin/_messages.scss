@@ -1,0 +1,28 @@
+.status-messages {
+  @include container($container);
+}
+
+.message {
+  border: 1px solid $color-blue;
+  background-color: rgba($color-blue, 20%);
+  color: $color-blue;
+  padding: $unit $unit * 2;
+  margin: $unit * 2 auto $unit * 2 $unit;
+  border-radius: 4px;
+  &--status {
+    border: 1px solid $color-green;
+    background-color: rgba($color-green, 20%);
+    color: $color-green;
+  }
+  &--error {
+    border: 1px solid $color-red;
+    background-color: rgba($color-red, 20%);
+    color: $color-red;
+  }
+  ul {
+    padding-left: $unit * 2;
+    li {
+      margin-bottom: $unit;
+    }
+  }
+}

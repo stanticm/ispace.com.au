@@ -1,0 +1,25 @@
+uuid: 7ef18e14-bbf4-4a12-bd80-b6fdbf75eabf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:46257559-9936-448d-a17d-909dc3d71c41'
+  module:
+    - block_content
+  theme:
+    - ispace
+id: ispace_logofooter
+theme: ispace
+region: footer_third
+weight: -6
+provider: null
+plugin: 'block_content:46257559-9936-448d-a17d-909dc3d71c41'
+settings:
+  id: 'block_content:46257559-9936-448d-a17d-909dc3d71c41'
+  label: 'Logo Footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

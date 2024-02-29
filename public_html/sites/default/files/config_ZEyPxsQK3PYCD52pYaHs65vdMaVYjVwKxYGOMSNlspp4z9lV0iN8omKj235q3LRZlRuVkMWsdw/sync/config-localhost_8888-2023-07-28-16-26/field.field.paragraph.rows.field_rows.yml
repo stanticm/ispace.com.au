@@ -1,0 +1,21 @@
+uuid: 4d8c0f11-a61d-496f-9a1a-8a03829184ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rows
+    - paragraphs.paragraphs_type.rows
+  module:
+    - options
+id: paragraph.rows.field_rows
+field_name: field_rows
+entity_type: paragraph
+bundle: rows
+label: Columns
+description: 'Choose how many columns you will have.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

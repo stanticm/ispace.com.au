@@ -1,0 +1,27 @@
+uuid: aa8388ad-6687-4d17-8a20-4fd9eadc54a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.icon_and_text
+  module:
+    - file
+id: paragraph.icon_and_text.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: icon_and_text
+label: Icon
+description: 'Add icon to your paragraph. Only svg files are allowed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+field_type: file

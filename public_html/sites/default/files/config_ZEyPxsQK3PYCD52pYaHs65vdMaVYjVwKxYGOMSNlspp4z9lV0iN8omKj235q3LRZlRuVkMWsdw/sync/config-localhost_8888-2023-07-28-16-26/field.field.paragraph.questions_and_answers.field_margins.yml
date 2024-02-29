@@ -1,0 +1,21 @@
+uuid: e80171ad-2e2c-41df-936d-a136d3802846
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_margins
+    - paragraphs.paragraphs_type.questions_and_answers
+  module:
+    - options
+id: paragraph.questions_and_answers.field_margins
+field_name: field_margins
+entity_type: paragraph
+bundle: questions_and_answers
+label: Margins
+description: 'With margins you can set the space between paragraphs, above and bellow paragraph. Choose the size.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

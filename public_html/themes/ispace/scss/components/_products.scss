@@ -1,0 +1,86 @@
+.view-products {
+  @include container($container);
+  padding: 0 $unit * 2 $unit * 4;
+  @include breakpoint($smBreakpoint) {
+    padding: 0 $unit * 3 $unit * 4;
+  }
+  @include breakpoint($mdBreakpoint) {
+    padding: 0 $unit * 8 $unit * 4;
+  }
+  .views-rows {
+    margin-bottom: $unit * 4;
+    &__title {
+      margin: $unit * 2 0;
+      &::after {
+        content: ":";
+      }
+    }
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: $unit;
+      flex-wrap: wrap;
+      @include breakpoint($mdBreakpoint) {
+        flex-direction: row;
+        gap: $unit * 2;
+      }
+      .views-row {
+        flex: 0 0 48%;
+        @include breakpoint($mdBreakpoint) {
+          flex: 0 0 23%;
+        }
+      }
+    }
+  }
+}
+
+.node-product-teaser {
+  h4 {
+    font-size: $font-size;
+    margin: $unit 0;
+    a {
+      color: $text-color;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.node-product-full {
+  &[data-node-title-alignment="center"] {
+    h1 {
+      text-align: center;
+    }
+  }
+  &[data-node-title-alignment="right"] {
+    h1 {
+      text-align: right;
+    }
+  }
+  &[data-node-title-alignment="left"] {
+    h1 {
+      text-align: left;
+    }
+  }
+}
+
+.view-products,
+.view-services {
+  header {
+    font-size: $h1-mob-size;
+    font-weight: bold;
+    margin: $unit * 4 0 $unit * 4;
+    @include breakpoint($smBreakpoint) {
+      font-size: $h1-tab-size;
+    }
+    @include breakpoint($mdBreakpoint) {
+      font-size: $h1-size;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.cdnfonts.com/css/d-din");
+
+$body-font: "D-DIN", sans-serif;
+$title-font: "D-DIN", sans-serif;
+
+$font-size: 18px;
+$h1-size: 48px;
+$h2-size: 36px;
+$h3-size: 32px;
+$h4-size: 24px;
+$h5-size: 22px;
+$h6-size: 20px;
+
+$font-tab-size: 16px;
+$h1-tab-size: 40px;
+$h2-tab-size: 32px;
+$h3-tab-size: 28px;
+$h4-tab-size: 24px;
+$h5-tab-size: 20px;
+$h6-tab-size: 16px;
+
+$font-mob-size: 16px;
+$h1-mob-size: 36px;
+$h2-mob-size: 28px;
+$h3-mob-size: 24px;
+$h4-mob-size: 22px;
+$h5-mob-size: 20px;
+$h6-mob-size: 16px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+  font-weight: bold;
+  color: $title-color;
+}
+
+h1 {
+  font-size: $h1-mob-size;
+  margin: $unit * 4 0 $unit * 4;
+  @include breakpoint($smBreakpoint) {
+    font-size: $h1-tab-size;
+  }
+  @include breakpoint($mdBreakpoint) {
+    font-size: $h1-size;
+  }
+}
+
+h2 {
+  font-size: $h2-mob-size;
+  margin: $unit * 2 0 $unit * 2;
+  @include breakpoint($smBreakpoint) {
+    font-size: $h2-tab-size;
+  }
+  @include breakpoint($mdBreakpoint) {
+    font-size: $h2-size;
+  }
+}
+
+h3 {
+  font-size: $h3-mob-size;
+  margin: $unit * 2 0 $unit * 2;
+  @include breakpoint($smBreakpoint) {
+    font-size: $h3-tab-size;
+  }
+  @include breakpoint($mdBreakpoint) {
+    font-size: $h3-size;
+  }
+}
+
+h4 {
+  font-size: $h4-mob-size;
+  margin: $unit * 2 0 $unit * 2;
+  @include breakpoint($smBreakpoint) {
+    font-size: $h4-tab-size;
+  }
+  @include breakpoint($mdBreakpoint) {
+    font-size: $h4-size;
+  }
+}
+
+h5 {
+  font-size: $h5-mob-size;
+  margin: $unit 0 $unit * 2;
+  @include breakpoint($smBreakpoint) {
+    font-size: $h5-tab-size;
+  }
+  @include breakpoint($mdBreakpoint) {
+    font-size: $h5-size;
+  }
+}
+
+h6 {
+  font-size: $h6-mob-size;
+  margin: $unit * 2 0 $unit * 2;
+  @include breakpoint($smBreakpoint) {
+    font-size: $h6-tab-size;
+  }
+  @include breakpoint($mdBreakpoint) {
+    font-size: $h6-size;
+  }
+}

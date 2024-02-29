@@ -1,0 +1,21 @@
+uuid: 7cf8ad26-e2d7-4e68-9cd2-3792bee441d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.card_with_overlay
+  module:
+    - options
+id: paragraph.card_with_overlay.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: card_with_overlay
+label: 'Position of title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

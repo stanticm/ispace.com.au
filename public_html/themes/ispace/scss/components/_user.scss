@@ -1,0 +1,13 @@
+.user-login-form {
+  max-width: 400px;
+  margin: $unit * 3 auto;
+  padding: $unit * 3 $unit * 3;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  input {
+    width: 100%;
+  }
+  .form-actions {
+    display: inline-block;
+  }
+}

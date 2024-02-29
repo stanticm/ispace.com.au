@@ -1,0 +1,25 @@
+uuid: 1ee807ad-ed53-4702-82fd-0d844f52ed8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-links
+  module:
+    - system
+  theme:
+    - ispace
+id: ispace_footerlinks
+theme: ispace
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-links'
+settings:
+  id: 'system_menu_block:footer-links'
+  label: 'Footer Links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

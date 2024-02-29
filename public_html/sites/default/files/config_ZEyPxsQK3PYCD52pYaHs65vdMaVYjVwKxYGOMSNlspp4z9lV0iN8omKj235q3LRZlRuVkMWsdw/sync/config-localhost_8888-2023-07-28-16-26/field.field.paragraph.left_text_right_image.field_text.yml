@@ -1,0 +1,24 @@
+uuid: 5f5bdb9c-2d29-4b7a-ab99-44beb01482f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.left_text_right_image
+  module:
+    - text
+id: paragraph.left_text_right_image.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: left_text_right_image
+label: Text
+description: 'Add text to your paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

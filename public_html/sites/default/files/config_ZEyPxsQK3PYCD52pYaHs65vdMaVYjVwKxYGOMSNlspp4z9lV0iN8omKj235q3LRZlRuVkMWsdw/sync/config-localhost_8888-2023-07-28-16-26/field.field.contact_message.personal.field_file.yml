@@ -1,0 +1,27 @@
+uuid: 981aaace-23fc-4a05-982f-6d1d462fa337
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_file
+  module:
+    - file
+id: contact_message.personal.field_file
+field_name: field_file
+entity_type: contact_message
+bundle: personal
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

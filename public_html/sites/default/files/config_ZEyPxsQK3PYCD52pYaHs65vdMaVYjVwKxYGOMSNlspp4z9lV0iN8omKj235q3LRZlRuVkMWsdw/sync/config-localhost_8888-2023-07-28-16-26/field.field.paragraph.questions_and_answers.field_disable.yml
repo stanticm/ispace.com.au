@@ -1,0 +1,21 @@
+uuid: 5873b551-d6ac-49b6-8695-1fbe83f2ad7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_disable
+    - paragraphs.paragraphs_type.questions_and_answers
+id: paragraph.questions_and_answers.field_disable
+field_name: field_disable
+entity_type: paragraph
+bundle: questions_and_answers
+label: Disable
+description: 'Disable or enable paragraph. The content will remain, the paragraph will just be hidden from the page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

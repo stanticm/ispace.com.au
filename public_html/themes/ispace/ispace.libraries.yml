@@ -1,0 +1,19 @@
+global-styling:
+  version: 1.x
+  css:
+    layout:
+      css/index.css: {}
+    theme:
+      css/index.css: {}
+  js:
+    js/ispace.js: {}
+  dependencies:
+    - core/jquery
+# swiper:
+#   js:
+#     libraries/swiper/js/swiper-bundle.min.js: { minified: true }
+#   css:
+#     libraries/swiper/css/swiper-bundle.min.css: { minified: true }
+#   dependencies:
+#     - core/jquery
+

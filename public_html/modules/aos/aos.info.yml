@@ -1,0 +1,10 @@
+name: Animate on Scroll
+description: Provides integration with the AOS javascript library.
+package: Other
+type: module
+core_version_requirement: ^9 || ^10
+
+# Information added by Drupal.org packaging script on 2022-11-14
+version: '1.0.1'
+project: 'aos'
+datestamp: 1668447626

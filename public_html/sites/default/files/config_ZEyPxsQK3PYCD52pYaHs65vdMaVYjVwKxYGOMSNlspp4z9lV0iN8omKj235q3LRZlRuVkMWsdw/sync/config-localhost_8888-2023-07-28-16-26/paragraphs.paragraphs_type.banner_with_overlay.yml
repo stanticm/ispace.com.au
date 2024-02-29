@@ -1,0 +1,10 @@
+uuid: 918ce5b4-b813-4cce-9819-f052e9830ed4
+langcode: en
+status: true
+dependencies: {  }
+id: banner_with_overlay
+label: 'Banner with overlay'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

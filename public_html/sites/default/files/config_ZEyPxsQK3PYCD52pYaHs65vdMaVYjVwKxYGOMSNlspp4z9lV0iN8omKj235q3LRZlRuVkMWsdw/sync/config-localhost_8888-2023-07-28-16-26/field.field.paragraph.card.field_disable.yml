@@ -1,0 +1,21 @@
+uuid: d642e009-875f-475b-9591-95a621178888
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_disable
+    - paragraphs.paragraphs_type.card
+id: paragraph.card.field_disable
+field_name: field_disable
+entity_type: paragraph
+bundle: card
+label: Disable
+description: 'Disable or enable paragraph. The content will remain, the paragraph will just be hidden from the page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

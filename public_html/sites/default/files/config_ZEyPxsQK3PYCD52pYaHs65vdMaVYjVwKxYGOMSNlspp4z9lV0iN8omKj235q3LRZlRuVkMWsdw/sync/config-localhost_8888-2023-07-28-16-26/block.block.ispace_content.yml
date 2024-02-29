@@ -1,0 +1,22 @@
+uuid: a52dbf8c-3121-4972-8cd1-b1b02e973abe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ispace
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: ispace_content
+theme: ispace
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

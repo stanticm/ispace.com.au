@@ -1,0 +1,15 @@
+uuid: 3810bfdd-a71d-4724-90d4-bac8100f1095
+langcode: en
+status: true
+dependencies: {  }
+name: card_big
+label: 'Card Big'
+effects:
+  02fe7574-da59-449a-ada3-064bf6f1444e:
+    uuid: 02fe7574-da59-449a-ada3-064bf6f1444e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 1020
+      anchor: center-center

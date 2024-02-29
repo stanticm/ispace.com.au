@@ -1,0 +1,66 @@
+uuid: 401e14df-382e-4b22-b931-1b7726ab1683
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_and_text.field_button
+    - field.field.paragraph.icon_and_text.field_disable
+    - field.field.paragraph.icon_and_text.field_icon
+    - field.field.paragraph.icon_and_text.field_text
+    - paragraphs.paragraphs_type.icon_and_text
+  module:
+    - link
+    - svg_formatter
+    - text
+id: paragraph.icon_and_text.default
+targetEntityType: paragraph
+bundle: icon_and_text
+mode: default
+content:
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_disable:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: svg_formatter
+    label: hidden
+    settings:
+      inline: false
+      sanitize: false
+      apply_dimensions: true
+      width: 110
+      height: 110
+      enable_alt: true
+      alt_string: ''
+      enable_title: true
+      title_string: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

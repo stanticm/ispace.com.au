@@ -1,0 +1,10 @@
+uuid: e23782c0-ec60-48bd-a289-3fc9cfe29a63
+langcode: en
+status: true
+dependencies: {  }
+id: big_card
+label: 'Big Card (Background Image with White Overlay)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

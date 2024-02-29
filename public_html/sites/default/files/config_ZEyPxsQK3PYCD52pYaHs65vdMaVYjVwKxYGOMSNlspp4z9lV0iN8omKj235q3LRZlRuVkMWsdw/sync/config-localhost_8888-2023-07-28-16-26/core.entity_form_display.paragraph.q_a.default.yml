@@ -1,0 +1,60 @@
+uuid: 2d34c0fd-b9b8-488e-9bd8-9a25182ebe5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.q_a.field_disable
+    - field.field.paragraph.q_a.field_text
+    - field.field.paragraph.q_a.field_title
+    - paragraphs.paragraphs_type.q_a
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_customize:
+      children:
+        - field_disable
+      label: Customize
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: paragraph.q_a.default
+targetEntityType: paragraph
+bundle: q_a
+mode: default
+content:
+  field_disable:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

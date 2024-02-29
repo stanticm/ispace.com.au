@@ -1,0 +1,24 @@
+uuid: f51e6ef0-092e-49c5-a599-d326844e0820
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - text
+id: paragraph.two_column_text.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: two_column_text
+label: Text
+description: 'Add text for the first column.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

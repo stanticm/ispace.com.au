@@ -1,0 +1,21 @@
+uuid: 0d2b775a-ac55-42af-8a3f-d38176fa9429
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_width
+    - paragraphs.paragraphs_type.rows
+id: paragraph.rows.field_full_width
+field_name: field_full_width
+entity_type: paragraph
+bundle: rows
+label: 'Full Width'
+description: 'Enable this if you want this paragraph to be full width of page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

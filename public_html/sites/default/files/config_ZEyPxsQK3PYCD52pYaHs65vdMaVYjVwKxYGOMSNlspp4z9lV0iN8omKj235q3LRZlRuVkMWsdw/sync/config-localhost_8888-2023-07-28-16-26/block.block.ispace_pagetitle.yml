@@ -1,0 +1,24 @@
+uuid: 9a2be22b-6934-4b31-9d8b-071c793a94dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ispace
+id: ispace_pagetitle
+theme: ispace
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact

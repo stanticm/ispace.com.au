@@ -1,0 +1,71 @@
+.node {
+  padding-bottom: $unit;
+  .body {
+    @include container($container);
+    @include breakpoint($smBreakpoint) {
+      padding: 0 $unit * 3;
+    }
+    @include breakpoint($mdBreakpoint) {
+      padding: 0 $unit * 8;
+    }
+  }
+  &[data-node-title-alignment="center"] {
+    h1 {
+      text-align: center;
+    }
+  }
+  &[data-node-title-alignment="right"] {
+    h1 {
+      text-align: right;
+    }
+  }
+  &[data-node-title-alignment="left"] {
+    h1 {
+      text-align: left;
+    }
+  }
+  h1 {
+    @include container($container);
+    margin: $unit auto $unit * 3;
+    @include breakpoint($smBreakpoint) {
+      margin: $unit * 4 auto $unit * 4;
+      padding: 0 $unit * 3;
+    }
+    @include breakpoint($mdBreakpoint) {
+      padding: 0 $unit * 8;
+    }
+  }
+}
+
+.node-teaser {
+  padding: 0;
+  &-title {
+    a {
+      color: $text-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .links {
+    a {
+      margin-top: 0;
+    }
+  }
+}
+
+.node-page-full {
+  h1 {
+    margin-top: $unit * 4;
+  }
+}
+
+.path-frontpage {
+  .node-page-full {
+    padding-bottom: 0px;
+    h1 {
+      display: none;
+    }
+  }
+}

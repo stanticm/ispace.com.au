@@ -1,0 +1,21 @@
+uuid: 3cd8cf93-d457-490b-80b3-e4dc10cd30ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vertical
+    - paragraphs.paragraphs_type.card_with_icon
+id: paragraph.card_with_icon.field_vertical
+field_name: field_vertical
+entity_type: paragraph
+bundle: card_with_icon
+label: Vertical
+description: 'Choose how this paragraph will be displayed. If you enable this, icon and text will go in vertical order.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

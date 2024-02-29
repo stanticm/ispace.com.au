@@ -1,0 +1,18 @@
+name: ISpace
+type: theme
+description: "ISpace for My Website."
+package: Other
+core_version_requirement: ^9 || ^10
+libraries:
+  - ispace/global-styling
+base theme: stark
+regions:
+  branding: Branding
+  navigation: Main navigation
+  search: Search
+  featured: Featured
+  content: Content
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom

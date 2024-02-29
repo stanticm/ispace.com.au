@@ -1,0 +1,70 @@
+uuid: f8d7f4ab-8163-4d8d-8e5c-f0fc3e8b7b6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_and_text.field_button
+    - field.field.paragraph.icon_and_text.field_disable
+    - field.field.paragraph.icon_and_text.field_icon
+    - field.field.paragraph.icon_and_text.field_text
+    - paragraphs.paragraphs_type.icon_and_text
+  module:
+    - field_group
+    - file
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_customize:
+      children:
+        - field_disable
+      label: Customize
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: paragraph.icon_and_text.default
+targetEntityType: paragraph
+bundle: icon_and_text
+mode: default
+content:
+  field_button:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_disable:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_icon:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: 8d0b49bf-4dbb-4d0a-acbf-80900663c388
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_disable
+    - paragraphs.paragraphs_type.banner_with_overlay
+id: paragraph.banner_with_overlay.field_disable
+field_name: field_disable
+entity_type: paragraph
+bundle: banner_with_overlay
+label: Disable
+description: 'Disable or enable paragraph. The content will remain, the paragraph will just be hidden from the page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

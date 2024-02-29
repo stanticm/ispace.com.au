@@ -1,0 +1,21 @@
+uuid: dad31905-7003-4e56-98cb-de201dddb5a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_width
+    - paragraphs.paragraphs_type.banner
+id: paragraph.banner.field_full_width
+field_name: field_full_width
+entity_type: paragraph
+bundle: banner
+label: 'Full Width'
+description: 'Enable this if you want this paragraph to be full width of page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

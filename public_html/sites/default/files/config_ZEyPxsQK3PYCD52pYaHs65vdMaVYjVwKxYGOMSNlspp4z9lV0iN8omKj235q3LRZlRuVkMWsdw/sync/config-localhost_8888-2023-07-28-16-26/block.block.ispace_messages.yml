@@ -1,0 +1,22 @@
+uuid: f61d8ee7-a448-4d1b-ab65-b0b28902c02b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ispace
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: ispace_messages
+theme: ispace
+region: featured
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

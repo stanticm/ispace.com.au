@@ -1,0 +1,15 @@
+uuid: 6da30f60-9bcf-40ab-9ff6-bfd8dc5d04a5
+langcode: en
+status: true
+dependencies: {  }
+name: card
+label: Card
+effects:
+  6a5ce38e-aa04-49b0-9a94-1dbb100798e9:
+    uuid: 6a5ce38e-aa04-49b0-9a94-1dbb100798e9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 680
+      height: 480
+      anchor: center-center

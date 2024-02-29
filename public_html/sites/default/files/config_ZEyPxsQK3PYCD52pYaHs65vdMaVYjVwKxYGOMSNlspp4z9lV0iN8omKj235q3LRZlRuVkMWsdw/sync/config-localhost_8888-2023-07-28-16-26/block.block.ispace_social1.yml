@@ -1,0 +1,25 @@
+uuid: a14b8908-a834-49ec-af53-9e308d895647
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-1
+  module:
+    - system
+  theme:
+    - ispace
+id: ispace_social1
+theme: ispace
+region: footer_third
+weight: -7
+provider: null
+plugin: 'system_menu_block:social-1'
+settings:
+  id: 'system_menu_block:social-1'
+  label: 'Social 1'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

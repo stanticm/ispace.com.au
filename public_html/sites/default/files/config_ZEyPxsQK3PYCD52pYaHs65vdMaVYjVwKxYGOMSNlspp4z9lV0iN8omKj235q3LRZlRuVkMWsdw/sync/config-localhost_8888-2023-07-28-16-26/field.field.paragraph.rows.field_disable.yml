@@ -1,0 +1,21 @@
+uuid: c478dc59-7f1b-43a6-96d3-37054f658edd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_disable
+    - paragraphs.paragraphs_type.rows
+id: paragraph.rows.field_disable
+field_name: field_disable
+entity_type: paragraph
+bundle: rows
+label: Disable
+description: 'Disable or enable paragraph. The content will remain, the paragraph will just be hidden from the page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,77 @@
+uuid: fe72fa72-7f84-4ba0-84bd-1912458c02da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.product
+    - paragraphs.paragraphs_type.big_card
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.card_with_icon
+    - paragraphs.paragraphs_type.card_with_overlay
+    - paragraphs.paragraphs_type.icon_and_text
+    - paragraphs.paragraphs_type.q_a
+  module:
+    - entity_reference_revisions
+id: node.product.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: product
+label: Paragraphs
+description: 'With paragraphs you can build your desired page. Choose paragraph type and add content to it.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      big_card: big_card
+      card: card
+      card_with_icon: card_with_icon
+      card_with_overlay: card_with_overlay
+      icon_and_text: icon_and_text
+      q_a: q_a
+    negate: 1
+    target_bundles_drag_drop:
+      banner:
+        weight: 14
+        enabled: false
+      banner_with_overlay:
+        weight: 15
+        enabled: false
+      big_card:
+        weight: 16
+        enabled: true
+      card:
+        weight: 17
+        enabled: true
+      card_with_icon:
+        weight: 18
+        enabled: true
+      card_with_overlay:
+        weight: 19
+        enabled: true
+      icon_and_text:
+        weight: 20
+        enabled: true
+      left_text_right_image:
+        weight: 3
+        enabled: false
+      q_a:
+        weight: 22
+        enabled: true
+      questions_and_answers:
+        weight: 23
+        enabled: false
+      rows:
+        weight: 24
+        enabled: false
+      text:
+        weight: 25
+        enabled: false
+      two_column_text:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

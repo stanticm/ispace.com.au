@@ -1,0 +1,19 @@
+uuid: 06319a6f-ddc6-4def-a713-cd8d5ba2d573
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Service
+type: service
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

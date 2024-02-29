@@ -1,0 +1,113 @@
+.header {
+  background-color: white;
+  box-shadow: 0 3px 9px 0px rgba(0, 0, 0, 0.1);
+  margin: 0 0 $unit * 3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.3s;
+  @include breakpoint($mdBreakpoint) {
+    margin: 10px 0 $unit * 6;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -10px;
+      height: 10px;
+      width: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(126, 109, 215, 1) 0%,
+        rgba(159, 109, 218, 1) 49%,
+        rgba(168, 64, 216, 1) 100%
+      );
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: $unit $unit * 2;
+  }
+}
+
+#block-ispace-sitebranding {
+  img {
+    width: 95px;
+    @include breakpoint($mdBreakpoint) {
+      width: 145px;
+    }
+  }
+}
+
+#block-ispace-mainnavigation {
+  display: none;
+  @include breakpoint($mdBreakpoint) {
+    display: block;
+  }
+  > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      position: relative;
+      // &:has(.menu-level-1) {
+      //   a {
+      //     &::after {
+      //       content: "\2304";
+      //       margin: 0 4px;
+      //       position: absolute;
+      //       top: 50%;
+      //       transform: translateY(-70%);
+      //     }
+      //   }
+      // }
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+      a {
+        padding: $unit * 2;
+        color: $text-color;
+        display: block;
+      }
+      ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: white;
+        padding: 0 8px;
+        width: 240px;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+        li {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          &:last-child {
+            border-bottom: 0;
+          }
+          a {
+            padding: $unit;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-logged-in {
+  #header {
+    top: 38px !important;
+    @include breakpoint($mdBreakpoint) {
+      top: 79px !important;
+    }
+  }
+}

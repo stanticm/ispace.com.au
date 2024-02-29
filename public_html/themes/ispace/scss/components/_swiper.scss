@@ -1,0 +1,63 @@
+.swiper-button {
+  &-prev {
+    left: 10px;
+    @include breakpoint($smBreakpoint) {
+      left: 50px;
+    }
+    &::after {
+      display: none;
+    }
+    &:before {
+      content: "";
+      width: 31px;
+      height: 43px;
+      display: block;
+      background-image: url("../images/icons/arrow-left.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      @include breakpoint($smBreakpoint) {
+        width: 37px;
+        height: 51px;
+        background-size: 28px;
+      }
+    }
+  }
+  &-next {
+    right: 10px;
+    @include breakpoint($smBreakpoint) {
+      right: 50px;
+    }
+    &::after {
+      display: none;
+    }
+    &::before {
+      content: "";
+      width: 31px;
+      height: 43px;
+      display: block;
+      background-image: url("../images/icons/arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      @include breakpoint($smBreakpoint) {
+        width: 37px;
+        height: 51px;
+        background-size: 28px;
+      }
+    }
+  }
+  &-disabled {
+    display: none;
+  }
+}
+
+.swiper-container {
+  margin: 0 auto;
+}

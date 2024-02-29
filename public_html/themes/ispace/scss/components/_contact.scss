@@ -1,0 +1,29 @@
+.webform-submission-contact-form {
+  @include container($container-s);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: $unit;
+  margin-bottom: $unit * 5;
+  > div {
+    @include breakpoint($xsBreakpoint) {
+      flex: 0 0 49%;
+    }
+    &.form-item-company-name,
+    &.ajax-wrapper,
+    &.form-item-message {
+      flex: 0 0 100%;
+    }
+    &.form-actions {
+      flex: 0 0 100%;
+      .button {
+        width: fit-content;
+      }
+    }
+  }
+
+  #edit-preview {
+    display: none;
+  }
+}

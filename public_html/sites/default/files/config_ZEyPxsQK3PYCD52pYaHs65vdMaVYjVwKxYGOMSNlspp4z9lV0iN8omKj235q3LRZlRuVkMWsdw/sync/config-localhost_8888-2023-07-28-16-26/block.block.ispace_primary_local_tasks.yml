@@ -1,0 +1,22 @@
+uuid: ea0699f7-6db9-4b1e-8b46-d96efa23f74e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ispace
+_core:
+  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
+id: ispace_primary_local_tasks
+theme: ispace
+region: featured
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

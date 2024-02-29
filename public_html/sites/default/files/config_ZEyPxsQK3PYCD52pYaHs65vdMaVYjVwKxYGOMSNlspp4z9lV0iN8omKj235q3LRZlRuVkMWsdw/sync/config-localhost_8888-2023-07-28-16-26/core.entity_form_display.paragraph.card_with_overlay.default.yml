@@ -1,0 +1,86 @@
+uuid: a6877d69-9260-4579-a558-c4f29ec48f3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_with_overlay.field_button
+    - field.field.paragraph.card_with_overlay.field_disable
+    - field.field.paragraph.card_with_overlay.field_media
+    - field.field.paragraph.card_with_overlay.field_position
+    - field.field.paragraph.card_with_overlay.field_subtitle
+    - field.field.paragraph.card_with_overlay.field_title
+    - paragraphs.paragraphs_type.card_with_overlay
+  module:
+    - field_group
+    - link
+    - media_library
+third_party_settings:
+  field_group:
+    group_customize:
+      children:
+        - field_disable
+        - field_position
+      label: Customize
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: paragraph.card_with_overlay.default
+targetEntityType: paragraph
+bundle: card_with_overlay
+mode: default
+content:
+  field_button:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_disable:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_media:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_position:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

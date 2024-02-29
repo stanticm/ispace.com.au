@@ -1,0 +1,247 @@
+// Global styles for all HTML elements
+
+a {
+  text-decoration: underline;
+  color: $primary-color;
+  transition: ease all 0.2s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+article {
+  // Styles for <article> elements
+}
+
+b {
+  // Styles for <b> (bold) elements
+}
+
+blockquote {
+  // Styles for <blockquote> elements
+}
+
+body {
+  // Styles for <body> elements
+}
+
+button {
+  // Styles for <button> elements
+}
+
+div {
+  // Styles for <div> elements
+}
+
+hr {
+  // Styles for <hr> elements
+}
+
+i {
+  // Styles for <i> elements
+}
+
+iframe {
+  // Styles for <iframe> elements
+}
+
+img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+}
+
+ins {
+  // Styles for <ins> elements
+}
+
+kbd {
+  // Styles for <kbd> elements
+}
+
+ul {
+  li {
+    // Styles for <li> elements
+  }
+}
+
+ol {
+  li {
+    // Styles for <li> elements
+  }
+}
+
+p {
+  margin: 0 0 $unit * 2;
+  line-height: 1.3;
+}
+
+picture {
+  // Styles for <picture> elements
+}
+
+s {
+  // Styles for <s> elements
+}
+
+section {
+  // Styles for <section> elements
+}
+
+small {
+  // Styles for <small> elements
+}
+
+source {
+  // Styles for <source> elements
+}
+
+span {
+  // Styles for <span> elements
+}
+
+strong {
+  // Styles for <strong> elements
+}
+
+sub {
+  // Styles for <sub> elements
+}
+
+summary {
+  // Styles for <summary> elements
+}
+
+table {
+  // Styles for <table> elements
+}
+
+tbody {
+  // Styles for <tbody> elements
+}
+
+td {
+  // Styles for <td> elements
+}
+
+tfoot {
+  // Styles for <tfoot> elements
+}
+
+th {
+  // Styles for <th> elements
+}
+
+thead {
+  // Styles for <thead> elements
+}
+
+tr {
+  // Styles for <tr> elements
+}
+
+video {
+  // Styles for <video> elements
+}
+
+.container {
+  @include container($container);
+}
+
+.menu {
+}
+
+nav {
+  ul,
+  ol {
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.field-button {
+  a {
+    @include button;
+  }
+}
+
+.button,
+button {
+  @include button;
+  height: auto;
+}
+
+.purple {
+  color: $primary-color;
+  font-weight: 400;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  li {
+    a {
+      @include button;
+    }
+  }
+}
+
+.flex {
+  padding: $unit * 2 0;
+  header {
+    @include container($container);
+    padding: 0 $unit * 2;
+    @include breakpoint($smBreakpoint) {
+      padding: 0 $unit * 3;
+    }
+    @include breakpoint($mdBreakpoint) {
+      padding: 0 $unit * 8;
+    }
+  }
+  .views-rows__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: $unit;
+    padding: 0 $unit * 2;
+    @include breakpoint($smBreakpoint) {
+      padding: 0 $unit * 3;
+      flex-direction: row;
+    }
+    @include breakpoint($mdBreakpoint) {
+      gap: $unit * 3;
+      @include container($container);
+      padding: 0 $unit * 8;
+    }
+    > div {
+      flex: 0 0 49%;
+      @include breakpoint($smBreakpoint) {
+        flex: 0 0 31%;
+      }
+    }
+  }
+}
+
+input[type="file"]::file-selector-button {
+  @include button;
+  padding: $unit;
+  border-color: $primary-color;
+  font-weight: 400;
+  font-size: unset;
+  margin-right: 4px;
+}
+
+.feed-icon {
+  display: none;
+}
+
+.form-no-label {
+  padding: 0 $unit * 8;
+}

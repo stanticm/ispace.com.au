@@ -1,0 +1,36 @@
+uuid: e1bad8a3-968b-4f7b-8727-ba1218ed37c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.body
+    - field.field.node.product.field_alignment
+    - field.field.node.product.field_image
+    - field.field.node.product.field_paragraphs
+    - field.field.node.product.field_range
+    - node.type.product
+  module:
+    - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_small
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_alignment: true
+  field_paragraphs: true
+  field_range: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

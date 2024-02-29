@@ -1,0 +1,67 @@
+uuid: 04a6b161-5fc6-48fd-b605-7f8d38dd7752
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.big_card.field_button
+    - field.field.paragraph.big_card.field_disable
+    - field.field.paragraph.big_card.field_media
+    - field.field.paragraph.big_card.field_subtitle
+    - field.field.paragraph.big_card.field_title
+    - paragraphs.paragraphs_type.big_card
+  module:
+    - link
+id: paragraph.big_card.default
+targetEntityType: paragraph
+bundle: big_card
+mode: default
+content:
+  field_button:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_disable:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

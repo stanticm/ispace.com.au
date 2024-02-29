@@ -1,0 +1,18 @@
+uuid: 1aa5156e-bcf3-4b86-8421-83d579c020d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_divider
+field_name: field_divider
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

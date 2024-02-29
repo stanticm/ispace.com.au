@@ -1,0 +1,10 @@
+uuid: c562f33f-5fa3-478a-9a4e-9254e55ea601
+langcode: en
+status: true
+dependencies: {  }
+id: q_a
+label: 'Q&A'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

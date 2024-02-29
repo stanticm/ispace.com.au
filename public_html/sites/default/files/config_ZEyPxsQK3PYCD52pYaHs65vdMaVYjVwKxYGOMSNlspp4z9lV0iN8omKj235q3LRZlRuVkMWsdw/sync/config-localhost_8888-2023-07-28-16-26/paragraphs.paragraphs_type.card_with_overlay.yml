@@ -1,0 +1,10 @@
+uuid: 682d897e-ff01-462f-9483-6aede4947d49
+langcode: en
+status: true
+dependencies: {  }
+id: card_with_overlay
+label: 'Card with overlay'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
